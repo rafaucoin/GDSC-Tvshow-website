@@ -4,11 +4,21 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
-
+import { ChakraProvider } from '@chakra-ui/react';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import Quizz from './Quizz';
+import theme from './theme';
 ReactDOM.render(
   <StrictMode>
     <ColorModeScript />
-    <App />
+    <ChakraProvider theme={theme}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<App />}></Route>
+          <Route path="quizz" element={<Quizz />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </ChakraProvider>
   </StrictMode>,
   document.getElementById('root')
 );

@@ -1,7 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+  font-family: Poppins !important;
+  user-select: none !important;
+}
 .container {
   background-image: url('./background.png');
   background-size: cover;
 }
 .form {
   height: 30vh;
+}
+.question {
+  box-shadow: 10px 5px 5px #886500 !important;
+}
+.box {
+  display: flex !important;
+  box-shadow: 100px 50px 500px #87251d !important;
+}
+.buzzer {
+  box-shadow: 10px 5px 5px #886500 !important;
+}
+
+.videos {
+  background: blue !important;
 }

@@ -8,6 +8,22 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Quizz from './Quizz';
 import theme from './theme';
+import logo from './image.png';
+
+import {
+  Text,
+  Link,
+  VStack,
+  Code,
+  Grid,
+  Flex,
+  Input,
+  FormControl,
+  FormLabel,
+  Image,
+  Heading,
+  Box,
+} from '@chakra-ui/react';
 ReactDOM.render(
   <StrictMode>
     <ColorModeScript />

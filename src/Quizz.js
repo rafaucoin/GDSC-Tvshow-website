@@ -71,31 +71,34 @@ function Quizz() {
             h="100%"
           >
             <Video isHost="HOST" />
-            <Flex width="5%" flexDirection="column" align="center">
+            <Flex
+              width="100%"
+              height="50%"
+              flexDirection="column"
+              align="center"
+            >
               <IconButton
                 fontSize="3xl"
                 h="30%"
-                w="100%"
+                w="40%"
                 color="Red"
                 onClick={() => setMic(!mic)}
                 icon={mic === false ? <FaMicrophoneSlash /> : <FaMicrophone />}
                 _focus={{ bg: 'white' }}
-                backgroundColor="gray.200"
+                backgroundColor="white.900"
                 mb={10}
               />
               <IconButton
                 fontSize="3xl"
                 h="30%"
-                w="100%"
+                w="40%"
                 color="Red"
                 onClick={() => setVideo(!video)}
                 _focus={{ bg: 'white' }}
-                backgroundColor="gray.200"
+                backgroundColor="white.900"
                 icon={video === false ? <MdVideocamOff /> : <MdVideocam />}
-                mb={10}
               />
-            </Flex>{' '}
-            */
+            </Flex>
           </Flex>
           <Flex h="100%" w="60%" justifyContent="center">
             <Question active={state} buzzer={setstate} run={handleBuzzer} />

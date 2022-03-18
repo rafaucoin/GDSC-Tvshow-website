@@ -26,8 +26,8 @@ import {
 } from '@chakra-ui/react';
 ReactDOM.render(
   <StrictMode>
-    <ColorModeScript />
     <ChakraProvider theme={theme}>
+      <ColorModeScript initialColorMode="light" />{' '}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />}></Route>

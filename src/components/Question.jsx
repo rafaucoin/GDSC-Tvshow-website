@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 import { AiFillStar } from 'react-icons/ai';
-import buzzerIcon from '../buzzerIcon.svg';
+// import buzzerIcon from '../buzzerIcon.svg';
 import img from '../jason-leung-Xaanw0s0pMk-unsplash.jpg';
 function Question({ buzzer, run, active }) {
   const basicBoxStyles = {

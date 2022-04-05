@@ -1,7 +1,13 @@
 import { Flex, Heading, Image, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 import avatar from '../avatar.svg';
+import { Video as Vid } from 'react-video-stream';
+const url = 'http://example.com/manifest.mpd';
 
+const options = {
+  requestHeader: 'Authorization',
+  requestToken: 'access_token',
+};
 function Video({ isHost, video }) {
   return (
     <Flex
@@ -11,12 +17,13 @@ function Video({ isHost, video }) {
       flexDirection="column"
       color="black"
     >
-      <Image src={avatar} />
-
-      <Flex flexDirection="column" align="center">
-        <Heading fontSize="lg">Flen Lfouleni</Heading>
-        <Text color="gray">{isHost === 'HOST' ? 'HOST' : 'Score: 00'}</Text>
-      </Flex>
+      <Vid
+        className="video-class"
+        controls={true}
+        autoPlay={true}
+        options={options}
+        remoteUrl={url}
+      />
     </Flex>
   );
 }

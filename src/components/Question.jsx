@@ -16,7 +16,7 @@ import buzzerIcon from '../buzzerIcon.svg';
 import img from '../jason-leung-Xaanw0s0pMk-unsplash.jpg';
 function Question({ buzzer, run, active }) {
   const basicBoxStyles = {
-    boxShadow: '10px 5px 5px #886500',
+    boxShadow: '1px 5px 5px black',
   };
   return (
     <Flex width="90%" gap={3} h="fit" justifyContent="center">
@@ -66,7 +66,7 @@ function Question({ buzzer, run, active }) {
               varius elementum elementum hendrerit justo arcu.
             </Text>
 
-            <Image height="50%" src={img} />
+            {/* <Image height="50%" src={img} /> */}
           </Flex>
         </Flex>
         <Flex

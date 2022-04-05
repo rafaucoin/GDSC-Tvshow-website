@@ -16,17 +16,10 @@ const theme = extendTheme({
     IconButton: {
       baseStyle: {
         fontWeight: 'bold',
-        // _focus: { boxShadow: 'none' },
-        // backgroundColor: 'black', // Normally, it is "semibold"
       },
     },
     Button: {
-      // 1. We can update the base styles
-      baseStyle: {
-        // _focus: { boxShadow: 'none', color: 'white' },
-        // Normally, it is "semibold"
-      },
-      // 2. We can add a new button size or extend existing
+      baseStyle: {},
       sizes: {
         xl: {
           h: '56px',
@@ -34,8 +27,6 @@ const theme = extendTheme({
           px: '32px',
         },
       },
-
-      // 3. We can add a new visual variant
     },
   },
 });

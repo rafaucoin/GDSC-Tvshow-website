@@ -110,20 +110,8 @@ function Quizz() {
             w="20%"
             alignItems="flex-start"
             flexDirection="column"
-            h="100%"
+            h="95%"
             overflowY="scroll"
-            // css={{
-            //   '&::-webkit-scrollbar': {
-            //     width: '4px',
-            //   },
-            //   '&::-webkit-scrollbar-track': {
-            //     width: '6px',
-            //   },
-            //   '&::-webkit-scrollbar-thumb': {
-            //     background: 'blue',
-            //     borderRadius: '24px',
-            //   },
-            // }}
           >
             <Video />
             <Video />
@@ -139,45 +127,3 @@ function Quizz() {
 }
 
 export default Quizz;
-{
-  /* <Flex h="70%" justifyContent="space-around" w="100%">
-        <Video />
-        <Question active={state} buzzer={setstate} run={handleBuzzer} />
-
-        <Video isHost="HOST" />
-      </Flex>
-      <Flex w="70vw" h="50%" justifyContent="center" overflow="auto">
-        <Video video={video} />
-        <Video />
-        <Video />
-        <Video />
-        <Video />
-        <Video />
-        <Video />
-        <Video />
-
-        <Flex width="5%" flexDirection="column" align="center">
-          <IconButton
-            fontSize="3xl"
-            h="30%"
-            w="100%"
-            color="Red"
-            onClick={() => setMic(!mic)}
-            icon={mic === false ? <FaMicrophoneSlash /> : <FaMicrophone />}
-            _focus={{ bg: 'white' }}
-            backgroundColor="gray.200"
-            mb={10}
-          />
-          <IconButton
-            fontSize="3xl"
-            h="30%"
-            w="100%"
-            color="Red"
-            onClick={() => setVideo(!video)}
-            _focus={{ bg: 'white' }}
-            backgroundColor="gray.200"
-            icon={video === false ? <MdVideocamOff /> : <MdVideocam />}
-            mb={10}
-          />
-        </Flex> */
-}

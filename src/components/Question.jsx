@@ -58,7 +58,6 @@ function Question({ buzzer, run, active }) {
             rounded={5}
             mb={5}
             p={2}
-            // boxShadow="xl"
             className="question"
           >
             <Text>

@@ -1,10 +1,7 @@
 import {
-  AspectRatio,
-  Box,
   Button,
   Flex,
   Grid,
-  GridItem,
   Icon,
   IconButton,
   Image,
@@ -12,8 +9,7 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 import { AiFillStar } from 'react-icons/ai';
-// import buzzerIcon from '../buzzerIcon.svg';
-import img from '../jason-leung-Xaanw0s0pMk-unsplash.jpg';
+import img from '../assets/jason-leung-Xaanw0s0pMk-unsplash.jpg';
 function Question({ buzzer, run, active }) {
   const basicBoxStyles = {
     boxShadow: '1px 5px 5px black',
@@ -64,7 +60,7 @@ function Question({ buzzer, run, active }) {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
               varius elementum elementum hendrerit justo arcu.
             </Text>
-
+{/* insert an image here */}
             {/* <Image height="50%" src={img} /> */}
           </Flex>
         </Flex>

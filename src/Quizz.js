@@ -1,21 +1,15 @@
 import {
-  VStack,
   Box,
   Flex,
-  Avatar,
-  AvatarBadge,
-  Icon,
   Image,
   Heading,
-  HStack,
-  Grid,
   IconButton,
   LightMode,
   useColorMode,
 } from '@chakra-ui/react';
 import React from 'react';
-import style from './styles.css';
-import logo from './image.png';
+import style from './styles/styles.css';
+import logo from './assets/image.png';
 import Video from './components/Video';
 import Question from './components/Question';
 import { useState, useEffect } from 'react';

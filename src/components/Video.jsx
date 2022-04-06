@@ -1,6 +1,6 @@
 import { Flex, Heading, Image, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
-import avatar from '../avatar.svg';
+import avatar from '../assets/avatar.svg';
 import { Video as Vid } from 'react-video-stream';
 const url = 'http://example.com/manifest.mpd';
 
